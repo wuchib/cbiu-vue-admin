@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -43,6 +43,9 @@ export default {
         "surface-900": "rgb(var(--surface-900))",
         "surface-950": "rgb(var(--surface-950))",
       },
+      height:{
+        'vh-screen':'100vh'
+      }
     },
   },
   plugins: [],

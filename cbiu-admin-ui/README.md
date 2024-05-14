@@ -1,9 +1,50 @@
-# Vue 3 + TypeScript + Vite
+# 后台管理系统框架 ( 前端 )
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 技术选型及官方文档
 
-## Recommended Setup
+Vue3 + Vite + + Typescript + Tailwindcss + PrimeVue UI 
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+Vue: https://vuejs.org/
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+Tailwindcss: https://tailwindcss.com/docs/guides/vite
+
+Primevue: https://tailwind.primevue.org/builder
+
+## 相关依赖 
+
+tailwindcss primevue 根据官方教程导入
+
+```shell
+npm i axios vue-router pinia tailwindcss primevue scss postcss autoprefixer unplugin-vue-components -D -S
+```
+
+## 配置自动导入
+
+vite.config.ts
+
+```typescript
+// 引入自动导入primeVue组件的插件
+import Components from 'unplugin-vue-components/vite'
+import { PrimeVueResolver } from 'unplugin-vue-components/resolvers'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    ...
+    Components({
+      resolvers:[
+        PrimeVueResolver()
+      ]
+    }),
+    ...
+  ],
+})
+
+```
+
+## 引入表单验证插件
+
+```shell
+npm i vee-validate yup -S -D
+```
+
