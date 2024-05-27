@@ -3,18 +3,18 @@
     <Card style="width: 20rem">
       <template #title>
         <div class="flex justify-center items-center">
-          <Avatar class="bg-green-300" size="xlarge" shape="circle" />
+          <h1>登录</h1>
         </div>
       </template>
       <template #content>
-        <DynamicForm ></DynamicForm>
+        <LoginForm />
       </template>
     </Card>
   </div>
 </template>
 
 <script setup lang="ts">
-import DynamicForm from "../components/DynamicForm.vue";
+import LoginForm from "./LoginForm.vue";
 
 </script>
 

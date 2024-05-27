@@ -2,14 +2,14 @@ export default {
     root: {
         class: [
             // Shape
-            'rounded-md',
+            // 'rounded-md',
 
             // Spacing
             'p-4',
 
             // Color
-            'bg-surface-0 dark:bg-surface-700',
-            'border border-surface-200 dark:border-surface-700',
+            // 'bg-surface-0 dark:bg-surface-700',
+            // 'border border-surface-200 dark:border-surface-700',
 
             // Misc
             'overflow-x-auto'

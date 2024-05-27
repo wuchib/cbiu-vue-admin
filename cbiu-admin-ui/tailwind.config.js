@@ -45,6 +45,9 @@ export default {
       },
       height:{
         'vh-screen':'100vh'
+      },
+      width:{
+        'vw-screen':'100vw'
       }
     },
   },
